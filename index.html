@@ -117,12 +117,50 @@
             margin-bottom: 12px;
         }
         
+        .product-prices {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .old-price {
+            text-decoration: line-through;
+            color: #e53e3e;
+            font-weight: bold;
+        }
+        
+        .offer-price {
+            color: #38a169;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
         footer {
             background: #2d3748;
             color: white;
             text-align: center;
             padding: 30px;
             font-size: 0.9em;
+        }
+        
+        .promo-banner {
+            background: #f0fff4;
+            color: #2f855a;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+            position: relative;
+        }
+        
+        .promo-banner b {
+            font-size: 1.2em;
+        }
+        
+        .promo-timer {
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 5px;
         }
         
         @media (max-width: 768px) {
@@ -169,179 +207,323 @@
             </div>
         </div>
         
+        <!-- Banner de promoción -->
+        <div class="promo-banner">
+            ¡Promoción especial! Todos los perfumes a solo <b>$250</b>. 
+            <span class="promo-timer">
+                Termina en: <span id="countdown"></span>
+            </span>
+            <br>
+            <small>La promoción solo es válida por 30 días.</small>
+        </div>
+        
+        <!-- Perfumería Hombre -->
         <div class="section">
-            <h2 class="section-title hombre"><span class="circle hombre"></span>Perfumes para Caballero</h2>
+            <h2 class="section-title hombre"><span class="circle hombre"></span>Perfumería Hombre</h2>
             <div class="product-grid">
                 <div class="product-card hombre">
+                    <div class="discount-badge">-31%</div>
                     <div class="product-name">BVLGARI</div>
                     <div class="product-notes">Amaderada</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$359.99</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card hombre">
+                    <div class="discount-badge">-4%</div>
                     <div class="product-name">CK IN 2</div>
                     <div class="product-notes">Fresco Dulce</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$259.95</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card hombre">
+                    <div class="discount-badge">-17%</div>
                     <div class="product-name">CUBA ORANGE</div>
                     <div class="product-notes">Floral</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$239.90</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card hombre">
+                    <div class="discount-badge">-22%</div>
                     <div class="product-name">EMPORIO CLUB</div>
                     <div class="product-notes">Amaderado Marino</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$319.99</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card hombre">
+                    <div class="discount-badge">-34%</div>
                     <div class="product-name">HIERVA NICHO</div>
                     <div class="product-notes">Explosión Frutal</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$379.95</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card hombre">
+                    <div class="discount-badge">-26%</div>
                     <div class="product-name">HUGO BOSS</div>
                     <div class="product-notes">Frutal Fresca</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$339.90</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card hombre">
+                    <div class="discount-badge">-31%</div>
                     <div class="product-name">INVICTUS AQUA</div>
                     <div class="product-notes">Cítrico</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$359.95</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card hombre">
+                    <div class="discount-badge">-32%</div>
                     <div class="product-name">INVICTUS PLATINUM</div>
                     <div class="product-notes">Amaderada</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$369.99</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card hombre">
+                    <div class="discount-badge">-11%</div>
                     <div class="product-name">KAMYA</div>
                     <div class="product-notes">Dulce Fresco</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$279.95</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card hombre">
+                    <div class="discount-badge">-34%</div>
                     <div class="product-name">KHAMRAH</div>
                     <div class="product-notes">Dulce</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$379.99</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card hombre">
+                    <div class="discount-badge">-31%</div>
                     <div class="product-name">LE BEAU</div>
                     <div class="product-notes">Dulce Fresco</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$359.90</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card hombre">
+                    <div class="discount-badge">-11%</div>
                     <div class="product-name">LOVE HONOR</div>
                     <div class="product-notes">Cítrico Fresco</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$279.99</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card hombre">
+                    <div class="discount-badge">-17%</div>
                     <div class="product-name">MOSCHINO</div>
                     <div class="product-notes">Amaderado</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$299.95</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card hombre">
+                    <div class="discount-badge">-32%</div>
                     <div class="product-name">ONE MILLION</div>
                     <div class="product-notes">Dulce Cítrico</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$369.90</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card hombre">
+                    <div class="discount-badge">-11%</div>
                     <div class="product-name">PITBULL</div>
                     <div class="product-notes">Dulce Amaderado</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$279.90</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card hombre">
+                    <div class="discount-badge">-29%</div>
                     <div class="product-name">TOY BOY</div>
                     <div class="product-notes">Amaderado Floral</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$349.95</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
             </div>
         </div>
         
+        <!-- Perfumería Mujer -->
         <div class="section">
-            <h2 class="section-title mujer"><span class="circle mujer"></span>Perfumes para Dama</h2>
+            <h2 class="section-title mujer"><span class="circle mujer"></span>Perfumería Mujer</h2>
             <div class="product-grid">
                 <div class="product-card mujer">
+                    <div class="discount-badge">-26%</div>
                     <div class="product-name">212</div>
                     <div class="product-notes">Amaderado</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$339.95</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card mujer">
+                    <div class="discount-badge">-4%</div>
                     <div class="product-name">360</div>
                     <div class="product-notes">Floral Frutal</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$259.99</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card mujer">
+                    <div class="discount-badge">-22%</div>
                     <div class="product-name">BE DELICIOUS</div>
                     <div class="product-notes">Floral Frutal</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$319.90</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card mujer">
+                    <div class="discount-badge">-31%</div>
                     <div class="product-name">CAROLINA HERRERA</div>
                     <div class="product-notes">Floral Amaderado</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$359.95</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card mujer">
+                    <div class="discount-badge">-32%</div>
                     <div class="product-name">GOOD GIRL</div>
                     <div class="product-notes">Dulce</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$369.99</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card mujer">
+                    <div class="discount-badge">-11%</div>
                     <div class="product-name">HALLOWEEN</div>
                     <div class="product-notes">Fresco Cítrico</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$279.95</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card mujer">
+                    <div class="discount-badge">-4%</div>
                     <div class="product-name">HELLO</div>
                     <div class="product-notes">Dulce Frutal</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$239.99</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card mujer">
+                    <div class="discount-badge">-17%</div>
                     <div class="product-name">KENZO AMOR</div>
                     <div class="product-notes">Cítrico</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$299.90</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card mujer">
+                    <div class="discount-badge">-26%</div>
                     <div class="product-name">LIGHT BLUE</div>
                     <div class="product-notes">Frutal Cítrico</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$339.99</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card mujer">
+                    <div class="discount-badge">-34%</div>
                     <div class="product-name">MAGAL</div>
                     <div class="product-notes">Dulce Tropical</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$379.95</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card mujer">
+                    <div class="discount-badge">-4%</div>
                     <div class="product-name">MAYA</div>
                     <div class="product-notes">Floral</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$259.95</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card mujer">
+                    <div class="discount-badge">-17%</div>
                     <div class="product-name">MEAW</div>
                     <div class="product-notes">Floral Frutal</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$239.95</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card mujer">
+                    <div class="discount-badge">-26%</div>
                     <div class="product-name">SAMSARA</div>
                     <div class="product-notes">Floral Amaderado</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$339.90</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card mujer">
+                    <div class="discount-badge">-11%</div>
                     <div class="product-name">SEXY GRAFFITI</div>
                     <div class="product-notes">Dulce Frutal</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$279.99</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card mujer">
+                    <div class="discount-badge">-31%</div>
                     <div class="product-name">THE ONE</div>
                     <div class="product-notes">Dulce Cítrico</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$359.90</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card mujer">
+                    <div class="discount-badge">-11%</div>
                     <div class="product-name">TOUS YOUR POWER</div>
                     <div class="product-notes">Dulce</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$279.95</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
                 <div class="product-card mujer">
+                    <div class="discount-badge">-22%</div>
                     <div class="product-name">YARA</div>
                     <div class="product-notes">Dulce Frutal</div>
-                    <div class="product-price">$250</div>
+                    <div class="product-prices">
+                        <span class="old-price">$319.99</span>
+                        <span class="offer-price">$250</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -355,7 +537,7 @@
         </div>
         
         <footer>
-            <p>© 2024 Alexandra Dufau - Alexa Vázquez | Todos los derechos reservados</p>
+            <p>© 2024 Alexandra Dufal - Alexa Vázquez | Todos los derechos reservados</p>
             <p>Contacto solo por redes sociales oficiales</p>
             <p>
                 <a href="https://www.tiktok.com/@alexandra_dufal_deluxe?is_from_webapp=1&sender_device=pc" target="_blank" style="color: #fff; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
@@ -406,8 +588,37 @@
             if(e.target === this) this.style.display = 'none';
         };
     </script>
+    <script>
+    // Cuenta regresiva de 30 días desde la primera carga
+    function startCountdown() {
+        // Guarda la fecha de fin en localStorage para que no se reinicie al recargar
+        var endDate = localStorage.getItem('promoEndDate');
+        if (!endDate) {
+            var d = new Date();
+            d.setDate(d.getDate() + 30);
+            endDate = d.toISOString();
+            localStorage.setItem('promoEndDate', endDate);
+        }
+        endDate = new Date(endDate);
+
+        function updateCountdown() {
+            var now = new Date();
+            var diff = endDate - now;
+            if (diff <= 0) {
+                document.getElementById('countdown').innerText = "¡La promoción terminó!";
+                return;
+            }
+            var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            var minutes = Math.floor((diff / (1000 * 60)) % 60);
+            var seconds = Math.floor((diff / 1000) % 60);
+            document.getElementById('countdown').innerText =
+                days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+        }
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    }
+    startCountdown();
+</script>
 </body>
 </html>
-
-
-
