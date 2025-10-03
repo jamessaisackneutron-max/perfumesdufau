@@ -607,7 +607,7 @@
             if(e.target === this) this.style.display = 'none';
         };
     </script>
-    <script>
+ <script>
     // Cuenta regresiva de 30 días desde la primera carga
     function startCountdown() {
         // Guarda la fecha de fin en localStorage para que no se reinicie al recargar
@@ -623,21 +623,30 @@
         function updateCountdown() {
             var now = new Date();
             var diff = endDate - now;
+            var countdownElem = document.getElementById('countdown');
             if (diff <= 0) {
-                document.getElementById('countdown').innerText = "¡La promoción terminó!";
+                countdownElem.innerText = "¡La promoción terminó!";
+                // Elimina los descuentos y tacha los precios
+                document.querySelectorAll('.discount-badge').forEach(function(badge) {
+                    badge.style.display = 'none';
+                });
+                document.querySelectorAll('.offer-price').forEach(function(offer) {
+                    offer.style.textDecoration = 'line-through';
+                    offer.style.color = '#e53e3e';
+                });
                 return;
             }
             var days = Math.floor(diff / (1000 * 60 * 60 * 24));
             var hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
             var minutes = Math.floor((diff / (1000 * 60)) % 60);
             var seconds = Math.floor((diff / 1000) % 60);
-            document.getElementById('countdown').innerText =
+            countdownElem.innerText =
                 days + "d " + hours + "h " + minutes + "m " + seconds + "s";
         }
         updateCountdown();
         setInterval(updateCountdown, 1000);
     }
     startCountdown();
-    </script>
+</script>
 </body>
 </html>
