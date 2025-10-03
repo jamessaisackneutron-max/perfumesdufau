@@ -82,8 +82,8 @@
 
 /* Estilos para el banner promocional */
 .promo-banner {
-    background: linear-gradient(90deg, #e75480 0%, #3b82f6 100%);
-    color: #fff;
+    background: #fff;
+    color: #e75480;
     text-align: center;
     padding: 18px 10px 10px 10px;
     border-radius: 12px;
@@ -91,19 +91,23 @@
     margin: 30px 0 10px 0;
     position: relative;
     box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .promo-banner b {
     font-size: 1.3em;
+    color: #3b82f6;
 }
 .promo-timer {
     display: inline-block;
-    margin-left: 10px;
+    margin: 5px 0 0 10px;
     background: #fff;
     color: #e75480;
     padding: 2px 10px;
     border-radius: 8px;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.2em;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .old-price {
     text-decoration: line-through;
@@ -152,4 +156,54 @@
 
 .product-card {
     position: relative;
+}
+
+/* Pega aquí el nuevo bloque para el banner degradado */
+.promo-banner-gradient {
+    background: linear-gradient(90deg, #e75480 0%, #3b82f6 100%);
+    color: #fff;
+    text-align: center;
+    padding: 18px 10px 10px 10px;
+    border-radius: 16px;
+    font-size: 1.2em;
+    margin: 30px 0 10px 0;
+    position: relative;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+.promo-banner-gradient b {
+    font-size: 1.3em;
+    color: #fff;
+    font-weight: bold;
+}
+.promo-timer-gradient {
+    display: inline-block;
+    margin: 8px 0 0 10px;
+    background: rgba(255,255,255,0.95);
+    color: #e75480;
+    padding: 4px 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    font-family: 'Segoe UI Mono', 'Consolas', monospace;
+}
+.promo-note {
+    display: block;
+    margin-top: 8px;
+    color: #fff;
+    font-size: 0.95em;
+    opacity: 0.92;
+}
+@media (max-width: 600px) {
+    .promo-banner-gradient {
+        font-size: 1em;
+        padding: 12px 4px 8px 4px;
+    }
+    .promo-timer-gradient {
+        font-size: 1em;
+        padding: 3px 8px;
+    }
 }
