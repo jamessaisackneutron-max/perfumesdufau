@@ -3,14 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo - Eau de parfum Dufal</title>
+    <title>Catálogo - Perfumes Dufal</title>
     <link rel="stylesheet" href="style/style.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -37,20 +33,14 @@
             text-transform: uppercase;
             letter-spacing: 2px;
         }
-        header p {
-            font-size: 1.1em;
-            opacity: 0.9;
-        }
+        header p { font-size: 1.1em; opacity: 0.9; }
         .contact-info {
             background: #f7fafc;
             padding: 20px;
             text-align: center;
             border-bottom: 3px solid #667eea;
         }
-        .contact-info p {
-            color: #4a5568;
-            font-weight: 500;
-        }
+        .contact-info p { color: #4a5568; font-weight: 500; }
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -73,9 +63,7 @@
             object-fit: cover;
             display: block;
         }
-        .section {
-            padding: 40px;
-        }
+        .section { padding: 40px; }
         .product-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -132,15 +120,10 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.10);
             z-index: 2;
             border: 3px solid #fff;
-            background: #e75480; /* Por defecto rosa */
-        }
-        .product-card.hombre .discount-badge {
-            background: #3b82f6;
-        }
-        .product-card.mujer .discount-badge {
             background: #e75480;
         }
-        /* Banner promocional degradado */
+        .product-card.hombre .discount-badge { background: #3b82f6; }
+        .product-card.mujer .discount-badge { background: #e75480; }
         .promo-banner-gradient {
             background: linear-gradient(90deg, #e75480 0%, #3b82f6 100%);
             color: #fff;
@@ -154,11 +137,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             overflow: hidden;
         }
-        .promo-banner-gradient b {
-            font-size: 1.3em;
-            color: #fff;
-            font-weight: bold;
-        }
+        .promo-banner-gradient b { font-size: 1.3em; color: #fff; font-weight: bold; }
         .promo-timer-gradient {
             display: inline-block;
             margin: 8px 0 0 10px;
@@ -180,29 +159,14 @@
             opacity: 0.92;
         }
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8em;
-            }
-            .gallery {
-                grid-template-columns: 1fr;
-                padding: 20px;
-            }
-            .section {
-                padding: 20px;
-            }
-            .product-grid {
-                grid-template-columns: 1fr;
-            }
+            header h1 { font-size: 1.8em; }
+            .gallery { grid-template-columns: 1fr; padding: 20px; }
+            .section { padding: 20px; }
+            .product-grid { grid-template-columns: 1fr; }
         }
         @media (max-width: 600px) {
-            .promo-banner-gradient {
-                font-size: 1em;
-                padding: 12px 4px 8px 4px;
-            }
-            .promo-timer-gradient {
-                font-size: 1em;
-                padding: 3px 8px;
-            }
+            .promo-banner-gradient { font-size: 1em; padding: 12px 4px 8px 4px; }
+            .promo-timer-gradient { font-size: 1em; padding: 3px 8px; }
         }
     </style>
 </head>
@@ -214,7 +178,7 @@
             <p>Calidad y Elegancia en Cada Frasco</p>
         </header>
         <div class="contact-info">
-            <p>Pide el tuyo en redes sociales</p>
+            <p>Solo pidelos en nuestra red social</p>
         </div>
         <div class="gallery">
             <div class="gallery-item">
@@ -227,327 +191,422 @@
                 <img src="perfumar.jpg" alt="Perfumes Dufau en la playa">
             </div>
         </div>
-        <!-- Banner de promoción degradado -->
         <div class="promo-banner-gradient">
             <span class="promo-text">¡Promoción especial! Todos los perfumes a solo <b>$250</b>.</span>
             <span class="promo-timer-gradient">
                 Termina en: <span id="countdown"></span>
             </span>
             <br>
-            <small class="promo-note">La promoción solo es válida por 30 días.</small>
+            <small class="promo-note">La promoción solo es válida por hasta agotar el tiempo.</small>
         </div>
-        
         <!-- Perfumería Hombre -->
         <div class="section">
             <h2 class="section-title hombre"><span class="circle hombre"></span>Perfumería Hombre</h2>
             <div class="product-grid">
                 <div class="product-card hombre">
-                    <div class="discount-badge">-31%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">BVLGARI</div>
                     <div class="product-notes">Amaderada</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Bvlgari Man
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$359.99</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card hombre">
-                    <div class="discount-badge">-4%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">CK IN 2</div>
                     <div class="product-notes">Fresco Dulce</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en CK IN2U Men
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$259.95</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card hombre">
-                    <div class="discount-badge">-4%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">CUBA ORANGE</div>
                     <div class="product-notes">Floral</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Cuba Orange
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$259.95</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card hombre">
-                    <div class="discount-badge">-22%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">EMPORIO CLUB</div>
                     <div class="product-notes">Amaderado Marino</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Emporio Armani Stronger With You
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$319.99</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card hombre">
-                    <div class="discount-badge">-34%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">HIERVA NICHO</div>
                     <div class="product-notes">Explosión Frutal</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Nishane Hacivat
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$379.95</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card hombre">
-                    <div class="discount-badge">-26%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">HUGO BOSS</div>
                     <div class="product-notes">Frutal Fresca</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Hugo Boss Bottled
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$339.90</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card hombre">
-                    <div class="discount-badge">-31%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">INVICTUS AQUA</div>
                     <div class="product-notes">Cítrico</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Invictus Aqua
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$359.95</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card hombre">
-                    <div class="discount-badge">-32%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">INVICTUS PLATINUM</div>
                     <div class="product-notes">Amaderada</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Invictus Platinum
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$369.99</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card hombre">
-                    <div class="discount-badge">-11%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">KAMYA</div>
                     <div class="product-notes">Dulce Fresco</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Lattafa Khamrah Qahwa
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$279.95</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card hombre">
-                    <div class="discount-badge">-34%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">KHAMRAH</div>
                     <div class="product-notes">Dulce</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Lattafa Khamrah
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$379.99</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card hombre">
-                    <div class="discount-badge">-31%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">LE BEAU</div>
                     <div class="product-notes">Dulce Fresco</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Jean Paul Gaultier Le Beau
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$359.90</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card hombre">
-                    <div class="discount-badge">-11%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">LOVE HONOR</div>
                     <div class="product-notes">Cítrico Fresco</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Versace Eros
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$279.99</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card hombre">
-                    <div class="discount-badge">-17%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">MOSCHINO</div>
                     <div class="product-notes">Amaderado</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Moschino Uomo
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$299.95</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card hombre">
-                    <div class="discount-badge">-32%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">ONE MILLION</div>
                     <div class="product-notes">Dulce Cítrico</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en 1 Million (Paco Rabanne)
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$369.90</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card hombre">
-                    <div class="discount-badge">-11%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">PITBULL</div>
                     <div class="product-notes">Dulce Amaderado</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Pitbull Man
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$279.90</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card hombre">
-                    <div class="discount-badge">-29%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">TOY BOY</div>
                     <div class="product-notes">Amaderado Floral</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Moschino Toy Boy
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$349.95</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
             </div>
         </div>
-        
         <!-- Perfumería Mujer -->
         <div class="section">
             <h2 class="section-title mujer"><span class="circle mujer"></span>Perfumería Mujer</h2>
             <div class="product-grid">
                 <div class="product-card mujer">
-                    <div class="discount-badge">-26%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">212</div>
                     <div class="product-notes">Amaderado</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en 212 (Carolina Herrera)
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$339.95</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card mujer">
-                    <div class="discount-badge">-4%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">360</div>
                     <div class="product-notes">Floral Frutal</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en 360 Perry Ellis
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$259.99</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card mujer">
-                    <div class="discount-badge">-22%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">BE DELICIOUS</div>
                     <div class="product-notes">Floral Frutal</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Be Delicious (DKNY)
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$319.90</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card mujer">
-                    <div class="discount-badge">-31%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">CAROLINA HERRERA</div>
                     <div class="product-notes">Floral Amaderado</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Carolina Herrera for Women
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$359.95</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card mujer">
-                    <div class="discount-badge">-32%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">GOOD GIRL</div>
                     <div class="product-notes">Dulce</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Good Girl (Carolina Herrera)
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$369.99</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card mujer">
-                    <div class="discount-badge">-11%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">HALLOWEEN</div>
                     <div class="product-notes">Fresco Cítrico</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Halloween
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$279.95</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card mujer">
-                    <div class="discount-badge">-3.85%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">HELLO</div>
                     <div class="product-notes">Dulce Frutal</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Hello by Lionel Richie
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$259.99</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card mujer">
-                    <div class="discount-badge">-17%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">KENZO AMOR</div>
                     <div class="product-notes">Cítrico</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Kenzo Amour
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$299.90</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card mujer">
-                    <div class="discount-badge">-26%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">LIGHT BLUE</div>
                     <div class="product-notes">Frutal Cítrico</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Light Blue (Dolce & Gabbana)
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$339.99</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card mujer">
-                    <div class="discount-badge">-34%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">MAGAL</div>
                     <div class="product-notes">Dulce Tropical</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Escada Magnetism
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$379.95</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card mujer">
-                    <div class="discount-badge">-4%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">MAYA</div>
                     <div class="product-notes">Floral</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Maya by Tocca
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$259.95</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card mujer">
-                    <div class="discount-badge">-17%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">MEAW</div>
                     <div class="product-notes">Floral Frutal</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Meow by Katy Perry
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$239.95</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card mujer">
-                    <div class="discount-badge">-26%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">SAMSARA</div>
                     <div class="product-notes">Floral Amaderado</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Samsara (Guerlain)
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$339.90</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card mujer">
-                    <div class="discount-badge">-11%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">SEXY GRAFFITI</div>
                     <div class="product-notes">Dulce Frutal</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Escada Sexy Graffiti
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$279.99</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card mujer">
-                    <div class="discount-badge">-31%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">THE ONE</div>
                     <div class="product-notes">Dulce Cítrico</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en The One (Dolce & Gabbana)
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$359.90</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card mujer">
-                    <div class="discount-badge">-11%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">TOUS YOUR POWER</div>
                     <div class="product-notes">Dulce</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Tous Your Powers
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$279.95</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
                 <div class="product-card mujer">
-                    <div class="discount-badge">-22%</div>
+                    <div class="discount-badge">-28.6%</div>
                     <div class="product-name">YARA</div>
                     <div class="product-notes">Dulce Frutal</div>
+                    <p style="color:#e75480; font-size:0.97em; margin:6px 0 0 0;">
+                        Perfume inspirado en Lattafa Yara
+                    </p>
                     <div class="product-prices">
-                        <span class="old-price">$319.99</span>
+                        <span class="old-price">$350</span>
                         <span class="offer-price">$250</span>
                     </div>
                 </div>
             </div>
         </div>
-        
         <div id="modal-img" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); align-items:center; justify-content:center;">
             <div style="background:#fff; border-radius:12px; padding:20px; max-width:90vw; max-height:90vh; text-align:center; position:relative;">
                 <span id="close-modal" style="position:absolute; top:10px; right:18px; font-size:2em; cursor:pointer;">&times;</span>
@@ -555,12 +614,11 @@
                 <div style="font-size:1.1em; color:#e75480; font-weight:bold;">Solo es imagen ilustrativa</div>
             </div>
         </div>
-        
         <footer class="footer-dufau">
-    <div class="footer-content">
-        <p>© 2025 Alexandra Dufau - Alexa Vázquez | Todos los derechos reservados</p>
-        <p>Contacto solo por redes sociales oficiales</p>
-        <div class="footer-social">
+            <div class="footer-content">
+                <p>© 2025 Alexandra Dufau - Alexa Vázquez | Todos los derechos reservados</p>
+                <p>Contacto solo por redes sociales oficiales</p>
+                 <div class="footer-social">
             <a href="https://www.tiktok.com/@alexandra_dufal_deluxe?is_from_webapp=1&sender_device=pc" target="_blank" aria-label="TikTok">
                 <svg width="24" height="24" viewBox="0 0 48 48" fill="none">
                     <circle cx="24" cy="24" r="24" fill="#000"/>
@@ -582,79 +640,70 @@
             alert('Estamos trabajando en ella');
         });
     </script>
-</footer>
+                <p style="margin-top:18px; color:#cbfdff; font-size:1em;">
+                    Aviso: Las fragancias comercializadas por Joseph Dufau son perfumes de inspiración.<br>
+                    No representan ni tienen relación con las marcas registradas mencionadas.<br>
+                    Los nombres se utilizan solo como referencia olfativa.
+                </p>
+            </div>
+        </footer>
     </div>
     <script>
-        // Selecciona todas las tarjetas de hombre y mujer
+        // Modal de imágenes
         document.querySelectorAll('.product-card.hombre, .product-card.mujer').forEach(function(card) {
             card.style.cursor = 'pointer';
             card.addEventListener('click', function() {
                 var img = document.getElementById('modal-img-src');
-                if(card.classList.contains('hombre')) {
-                    img.src = 'ph.jpg';
-                } else {
-                    img.src = 'pM.jpg';
-                }
+                img.src = card.classList.contains('hombre') ? 'ph.jpg' : 'pM.jpg';
                 document.getElementById('modal-img').style.display = 'flex';
             });
         });
-        // Cerrar modal
         document.getElementById('close-modal').onclick = function() {
             document.getElementById('modal-img').style.display = 'none';
         };
-        // Cerrar modal al hacer clic fuera de la imagen
         document.getElementById('modal-img').onclick = function(e) {
             if(e.target === this) this.style.display = 'none';
         };
-    </script>
- <script>
-    // Cuenta regresiva de 7 días desde HOY (igual para todos los dispositivos)
-    // Calcula la fecha de fin en UTC, 7 días desde el primer día que se abre la página
-    // Si quieres que siempre sean 7 días desde HOY, usa la fecha actual cada vez que se carga
 
-    // Fecha de inicio fija (cuando subes la página), por ejemplo, hoy:
-    const startDateUTC = new Date(Date.UTC(2025, 9, 3, 0, 0, 0)); // 3 de octubre de 2025 (mes 9 porque enero=0)
-    const endDate = new Date(startDateUTC.getTime() + 7 * 24 * 60 * 60 * 1000);
+        // Ajusta todos los precios tachados a $350 y el descuento a -28.6% desde el inicio
+        document.querySelectorAll('.product-prices').forEach(function(prices) {
+            var oldPrice = prices.querySelector('.old-price');
+            var badge = prices.parentElement.querySelector('.discount-badge');
+            if (oldPrice) oldPrice.innerText = "$350";
+            if (badge) badge.innerText = "-28.6%";
+        });
 
-    function startCountdown() {
-        function updateCountdown() {
-            var now = new Date();
-            var diff = endDate - now;
-            var countdownElem = document.getElementById('countdown');
-            if (diff <= 0) {
-                countdownElem.innerText = "¡La promoción terminó!";
-                // Elimina los descuentos
-                document.querySelectorAll('.discount-badge').forEach(function(badge) {
-                    badge.style.display = 'none';
-                });
-                // Cambia todos los precios tachados a $350 y oculta el precio de oferta
-                document.querySelectorAll('.product-prices').forEach(function(prices) {
-                    var oldPrice = prices.querySelector('.old-price');
-                    var offerPrice = prices.querySelector('.offer-price');
-                    if (oldPrice) {
-                        oldPrice.innerText = "$350";
-                        oldPrice.style.textDecoration = 'line-through';
-                        oldPrice.style.color = '#e53e3e';
-                        oldPrice.style.display = 'inline';
-                    }
-                    if (offerPrice) {
-                        offerPrice.style.display = 'none';
-                    }
-                });
-                return;
+        // Cuenta regresiva de 7 días desde HOY (igual para todos los dispositivos)
+        const startDateUTC = new Date(Date.UTC(2025, 9, 3, 0, 0, 0)); // 3 de octubre de 2025
+        const endDate = new Date(startDateUTC.getTime() + 7 * 24 * 60 * 60 * 1000);
+
+        function startCountdown() {
+            function updateCountdown() {
+                var now = new Date();
+                var diff = endDate - now;
+                var countdownElem = document.getElementById('countdown');
+                if (diff <= 0) {
+                    countdownElem.innerText = "¡La promoción terminó!";
+                    document.querySelectorAll('.discount-badge').forEach(function(badge) {
+                        badge.style.display = 'none';
+                    });
+                    document.querySelectorAll('.product-prices').forEach(function(prices) {
+                        var offerPrice = prices.querySelector('.offer-price');
+                        if (offerPrice) offerPrice.style.display = 'none';
+                    });
+                    return;
+                }
+                var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+                var minutes = Math.floor((diff / (1000 * 60)) % 60);
+                var seconds = Math.floor((diff / 1000) % 60);
+                countdownElem.innerText =
+                    days + "d " + hours + "h " + minutes + "m " + seconds + "s";
             }
-            var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-            var minutes = Math.floor((diff / (1000 * 60)) % 60);
-            var seconds = Math.floor((diff / 1000) % 60);
-            countdownElem.innerText =
-                days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
         }
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
-    }
-    startCountdown();
-</script>
+        startCountdown();
+    </script>
 </body>
 </html>
-
