@@ -608,31 +608,38 @@
         };
     </script>
  <script>
-    // Cuenta regresiva de 30 días desde la primera carga
-    function startCountdown() {
-        // Guarda la fecha de fin en localStorage para que no se reinicie al recargar
-        var endDate = localStorage.getItem('promoEndDate');
-        if (!endDate) {
-            var d = new Date();
-            d.setDate(d.getDate() + 30);
-            endDate = d.toISOString();
-            localStorage.setItem('promoEndDate', endDate);
-        }
-        endDate = new Date(endDate);
+    // Cuenta regresiva de 7 días desde HOY (igual para todos los dispositivos)
+    // Calcula la fecha de fin en UTC, 7 días desde el primer día que se abre la página
+    // Si quieres que siempre sean 7 días desde HOY, usa la fecha actual cada vez que se carga
 
+    // Fecha de inicio fija (cuando subes la página), por ejemplo, hoy:
+    const startDateUTC = new Date(Date.UTC(2025, 9, 3, 0, 0, 0)); // 3 de octubre de 2025 (mes 9 porque enero=0)
+    const endDate = new Date(startDateUTC.getTime() + 7 * 24 * 60 * 60 * 1000);
+
+    function startCountdown() {
         function updateCountdown() {
             var now = new Date();
             var diff = endDate - now;
             var countdownElem = document.getElementById('countdown');
             if (diff <= 0) {
                 countdownElem.innerText = "¡La promoción terminó!";
-                // Elimina los descuentos y tacha los precios
+                // Elimina los descuentos
                 document.querySelectorAll('.discount-badge').forEach(function(badge) {
                     badge.style.display = 'none';
                 });
-                document.querySelectorAll('.offer-price').forEach(function(offer) {
-                    offer.style.textDecoration = 'line-through';
-                    offer.style.color = '#e53e3e';
+                // Cambia todos los precios tachados a $350 y oculta el precio de oferta
+                document.querySelectorAll('.product-prices').forEach(function(prices) {
+                    var oldPrice = prices.querySelector('.old-price');
+                    var offerPrice = prices.querySelector('.offer-price');
+                    if (oldPrice) {
+                        oldPrice.innerText = "$350";
+                        oldPrice.style.textDecoration = 'line-through';
+                        oldPrice.style.color = '#e53e3e';
+                        oldPrice.style.display = 'inline';
+                    }
+                    if (offerPrice) {
+                        offerPrice.style.display = 'none';
+                    }
                 });
                 return;
             }
@@ -650,6 +657,3 @@
 </script>
 </body>
 </html>
-
-
-
